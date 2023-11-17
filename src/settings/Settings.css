@@ -1,0 +1,52 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  border: 1px solid gray;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.profile-image > img {
+  border-radius: 20px;
+  width: 300px;
+}
+.profile-card .settings-option {
+  padding: 1rem;
+}
+
+.settings-option {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 300px;
+}
+.language,
+.theme {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.theme > button {
+  padding: 0.5rem;
+  background-color: gray;
+  border: none;
+  border-radius: 5px;
+}
+
+.language > select {
+  padding: 0.2rem;
+  border-radius: 5px;
+}

@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
+body {
+  margin: 0;
+}
+
+.navbar {
+  background-color: #cdccc8;
+  height: 10vh;
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 6px 2px 7px rgb(59, 59, 59);
+  margin-bottom: 3rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo > p {
+  color: #d78e0c;
+  font-family: "Courgette", cursive;
+  font-size: 30px;
+  margin-left: 1rem;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-list > li {
+  margin-left: 1rem;
+}
+
+.menu-list > li > a {
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 450;
+  color: #d78e0c;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+
+.menu-list > li > a:hover {
+  color: #667447;
+  transform: scale(1.1);
+}
+
+.light {
+  background-color: #fff;
+  color: #333;
+}
+
+/* .light h1 {
+  color: red;
+} */
+
+.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.slider-container {
+  height: 25px;
+  width: 50px;
+  border-radius: 20px;
+  background-color: lightgray;
+  position: relative;
+  transition: background-color 3s ease-in-out;
+  cursor: pointer;
+}
+
+.slider-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 2.5px;
+  left: 2.5px;
+  transition: left 3s ease-in-out;
+}
+
+.slider-container.dark {
+  background-color: darkgray;
+}
+
+.slider-container.dark .slider-button {
+  left: calc(100% - 22.5px);
+}
+
+.profil-picture {
+  border-radius: 50%;
+  border: 3px solid #d78e0c;
+  transition: transform 0.5s;
+}
+
+.profil-picture:hover {
+  transform: rotateY(180deg);
+}
